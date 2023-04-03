@@ -26,13 +26,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-User JohnDoe = new ExpiredUser("John Doe",
-                   new TVLicence (new DateTime(2008, 5, 1), STATUS.EXPIRED),
-                   new Address (1, "Whoville Lane", "Whoville", "BT1 1JX", "Seuss Land"), 
-                   "123456", false, 
-                   new Fine (123.50, new DateTime(2021, 5, 1)), 
-                   false);
-
 ModelTesting.testProperties();
 
 
